@@ -18,7 +18,7 @@ app.use(
 	cors({
 		origin: [
 			'http://localhost:5173',
-			'https://datn-fe-sandy.vercel.app/',
+			'https://datn-fe-hhuonghuys-projects.vercel.app',
 		],
 		methods: 'GET, HEAD, PUT, PATCH, POST, DELETE',
 		credentials: true,
