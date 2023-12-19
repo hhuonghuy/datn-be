@@ -18,7 +18,7 @@ app.use(
 	cors({
 		origin: [
 			'http://localhost:5173',
-			'https://bui-huy-huong-convert-fe-datn.vercel.app',
+			'https://datn-fe-sandy.vercel.app/',
 		],
 		methods: 'GET, HEAD, PUT, PATCH, POST, DELETE',
 		credentials: true,
