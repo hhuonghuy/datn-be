@@ -16,12 +16,10 @@ const port = 4021; // Thay đổi cổng thành cổng bạn muốn
 
 app.use(
 	cors({
-		origin: [
-			'http://localhost:5173',
-			'https://datn-fe-hhuonghuys-projects.vercel.app',
-		],
-		methods: 'GET, HEAD, PUT, PATCH, POST, DELETE',
-		credentials: true,
+		origin: '*',
+		methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+		preflightContinue: false,
+		optionsSuccessStatus: 204,
 	})
 );
 app.get('/:id', (req, res) => {
