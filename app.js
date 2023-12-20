@@ -18,11 +18,17 @@ app.use(
 	cors({
 		origin: '*',
 		methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-		preflightContinue: false,
-		optionsSuccessStatus: 204,
 	})
 );
 app.get('/:id', (req, res) => {
+	const data = [
+		{
+			message: 'Dữ liệu từ máy chủ Node.js',
+		},
+	];
+	res.json(data);
+});
+app.get('/', (req, res) => {
 	const data = [
 		{
 			message: 'Dữ liệu từ máy chủ Node.js',
